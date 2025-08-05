@@ -1,0 +1,151 @@
+body{
+    height: 100vh;
+    
+}
+
+header{
+    height: 15%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    color: white;
+    background-color: rgb(1, 250, 175);
+}
+
+footer{
+    height: 100px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 100px;
+    color: white;
+    background-color: rgb(156, 73, 252);
+}
+
+
+
+ul{
+    list-style: none;
+    padding: 0;
+    word-spacing: -4px;
+}
+
+h3{
+    margin: 0;
+    
+}
+
+.listSection{
+    text-align: center;
+}
+
+.listItemBase{
+   display: inline-block;
+   width: 90%;
+   margin-top: 15px;
+   border: 1px solid;
+   border-radius: 5px;
+   box-shadow: 0 0 20px rgba(128, 128, 128, 0.311);
+   
+}
+
+.internalList{
+    height: 10%;
+}
+
+.internalList .listItemInternal{
+    width:25%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.listItemInternal h3{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.progressBox{
+    word-spacing: 10px;
+    margin-left: 10px;
+}
+
+.progressBox h3{
+    text-align: left;
+}
+
+.listItemInternal b{
+ color: rgb(4, 4, 247);
+}
+
+.listItemInternal button{
+    width: 70%;
+    height: 30px;
+    border-radius: 100px;
+    vertical-align: middle;
+    color: white;
+    background-color: rgb(81, 81, 255);
+    margin-top: 17px;
+    cursor: pointer;
+}
+
+.listItemInternal button:hover{
+    border: none;
+    box-shadow: 0 0 10px rgb(25, 0, 255);
+    transition: all ease 1.5s;
+}
+
+.listItemInternal button:focus{
+    background-color: white;
+    color:rgb(81, 81, 255) ;
+}
+
+.boxshadow{
+     box-shadow: 5px 0 25px rgba(128, 128, 128, 0.325);
+}
+
+.star{
+    color: rgba(255, 115, 0, 0.938);
+    font-size: 25px;
+}
+
+.logoBox{
+    position: relative;
+}
+
+.logoImage{
+    position: absolute;
+    left: 10px;
+    padding: 4px 5px 0px 5px;
+    font-size: 16px;
+}
+
+.logoText{
+    margin-left: 20px;
+    font-weight: bold;
+    
+}
+
+.lineheight70{
+    line-height: 60px;
+}
+
+.wordSpacing3{
+    word-spacing: 3px;
+}
+
+.textAlignCenter{
+    text-align: center;
+}
+
+.verticalAlignMiddle{
+    vertical-align: middle;
+}
+
+
+
+@media (max-width: 700px) {
+ li{
+    width: 100% !important;
+    
+ }    
+}
