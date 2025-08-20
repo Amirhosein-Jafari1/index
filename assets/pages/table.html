@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link rel="stylesheet" href="/assets/css/table.css">
+    <link rel="stylesheet" href="/assets/css/flex-page.css">
+</head>
+<body>
+    <section class="app-container">
+        <header class="header">
+           <div class="logo">
+                <img class="logo" src="/assets/img/logo.png"  alt="">
+           </div>
+
+           <nav class="menu">
+                <ul>
+                    <li><a href="">خانه</a></li>
+                    <li><a href="">محصولات</a></li>
+                    <li><a href="">درباره ما</a></li>
+                    <li><a href="">تماس با ما</a></li>
+                </ul>
+           </nav>
+
+           <!--mobile menu-->
+           <details class="moblieMenu d_mobile">
+             <summary>
+                <img  class="color_white" width="30px" src="/assets/img/svg/menu-hamburger1-svgrepo-com.svg" alt="">
+             </summary>
+            <ul class="p_absolute right_1 z_index1">
+                <li class="d_block"><a href="#">خانه</a></li>
+                <li class="d_block"><a href="#">محصولات</a></li>
+                <li class="d_block"><a href="#">درباره ما</a></li>
+                <li class="d_block"><a href="#">تماس با ما</a></li>
+            </ul>
+           </details>
+        </header>
+        
+        <main class="main-content">
+            <h2>محصولات ما</h2>
+            <table>
+                <thead class="p_sticky">
+                    <tr class=" mt_1">
+                        <th>نام محصول</th>
+                        <th>برند</th>
+                        <th>قیمت</th> 
+                        <th>تصویر</th>
+                        <th>تعداد</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="mt_1">
+                        <td>مانیتور</td>
+                        <td>Apple</td>
+                        <td>12,000,000 تومان</td>
+                        <td>
+                            <a href="#product1">
+                                <img 
+                                class="scale3 height_2" src="/assets/img/products/1.png"   alt="">
+                            </a>
+                        </td>
+                        <td>10</td>
+                    </tr>
+                    <tr class="mt_1">
+                        <td>ماوس</td>
+                        <td>Tsco</td>
+                        <td>1,200,000 تومان</td>
+                        <td>
+                            <a href="#product2">
+                                <img 
+                                class="scale3 height_2" src="/assets/img/products/5.png"  alt="">
+                            </a>
+                        </td>
+                        <td>12</td>
+                    </tr>
+                    <tr class="mt_1">
+                        <td>گوشی</td>
+                        <td>Apple</td>
+                        <td>38,000,000 تومان</td>
+                        <td>
+                            <a href="#product3">
+                                <img 
+                                class="scale3 height_2" src="/assets/img/products/4.png"  alt="">
+                            </a>
+                        </td>
+                        <td>5</td>
+                    </tr>
+                    <tr class="mt_1">
+                        <td>لپ تاپ</td>
+                        <td>Asus</td>
+                        <td>43,000,000 تومان</td>
+                        <td>
+                            <a href="#product4">
+                                <img 
+                                class="scale3 height_2" src="/assets/img/products/7.png"  alt="">
+                            </a>
+                        </td>
+                        <td>13</td>
+                    </tr>
+            
+                </tbody>
+
+                <tfoot class="bg_green">
+                     <tr class="mt_1">
+                        <td colspan="4">جمع کل</td>
+                        <td>40</td>
+                        
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div 
+            id="product1"
+            class="productModal d_flex align_items_center justify_content_center top_0 p_absolute w_100 h_100 left_0 background_blur_black">
+
+            <img class="w_50 h_1 drop_shadow" src="/assets/img/products/1.png" alt="">
+
+            <a class="top_0 left_0 p_absolute close_btn m_2" href="#">❌</a>
+
+            </div>
+            <div 
+            id="product2"
+            class="productModal d_flex align_items_center justify_content_center top_0 p_absolute w_100 h_100 left_0 background_blur_black">
+
+            <img class="w_50 h_1 drop_shadow" src="/assets/img/products/5.png" alt="">
+
+            <a class="top_0 left_0 p_absolute close_btn m_2" href="#">❌</a>
+
+            </div>
+            <div 
+            id="product3"
+            class="productModal d_flex align_items_center justify_content_center top_0 p_absolute w_100 h_100 left_0 background_blur_black">
+
+            <img class="w_50 h_1 drop_shadow" src="/assets/img/products/4.png" alt="">
+
+            <a class="top_0 left_0 p_absolute close_btn m_2" href="#">❌</a>
+
+            </div>
+            <div 
+            id="product4"
+            class="productModal d_flex align_items_center justify_content_center top_0 p_absolute w_100 h_100 left_0 background_blur_black">
+
+            <img class="w_50 h_1 drop_shadow" src="/assets/img/products/7.png" alt="">
+
+            <a class="top_0 left_0 p_absolute close_btn m_2" href="#">❌</a>
+
+            </div>
+        </main>
+
+        <footer class="footer ">
+            <p>&copy; تمامی حقوق محفوظ است 2025</p>
+        </footer>
+    </section>
+</body>
+</html>

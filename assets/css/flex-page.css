@@ -80,7 +80,7 @@ body{
 .main-content{
     padding: 20px;
     text-align: center;
-    background-color: #d3fddf;
+    background: url(/assets/img/21.jpg) no-repeat center/ cover;
     flex: 1;
 }
 
