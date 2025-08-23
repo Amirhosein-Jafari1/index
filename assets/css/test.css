@@ -1,71 +1,95 @@
-*{
-   scroll-behavior: smooth;
+@font-face {
+  font-family: tanha;
+  src: url(/assets/font/persian-font/vazir-font-v18.0.0/Vazir-Light.woff2);
 }
 
 body{
-    direction: rtl;
+
+  background-color: rgba(1, 13, 184, 0.774);
 }
 
- .static-box{
-    padding: 20px;
-    background-color: lightblue;
-    border: 2px solid blue;
-    margin: 10px auto;
-    width: 80%;
-    text-align: center;
+.footer{
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  font-family: tanha;
+  font-weight: bold;
+}
+.media-section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  
+}
+
+.videoBox{
+  width: 60%;
+  border-radius: 2rem;
+  overflow: hidden;
+  outline: 0.3rem solid #ffffff;
+  outline-offset: 0.5rem;
+  height: 50vh;
+  position: relative;
  }
 
- .relative-box{
-    padding: 20px;
-    background-color: lightgreen;
-    border: 2px solid green;
-    margin: 10px auto;
-    width: 80%;
-    text-align: center;
-    position: relative;
-    top: 20px;
-    left: 20px;
-    z-index: 2;
+.videoBox video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
  }
 
- .absolute-box{
-    padding: 20px;
-    background-color: lightcoral;
-    border: 2px solid red;
-    margin: 10px auto;
-    width: 200px;
-    text-align: center;
-    position: absolute;
-    top: 60px;
-    right: 50px;
-    z-index: 4;
+.videoBox button{
+  font-family: tanha;
+  backdrop-filter: blur(10px);
+  background-color:  rgba(0, 17, 255, 0.363);
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 10rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  box-shadow: 0 0 0.5rem rgba(45, 24, 235, 0.37) inset;
+  bottom: 2rem;
+}
+
+
+.musicBox{
+  display: flex;
+  gap: 1rem;
+}
+
+.musicItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.39);
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem #fffffff6 inset ;  
+  padding: 1rem;
+}
+.musicItem img{
+  width: 5rem;
+  height: 5rem; 
+  object-fit: cover;
+  border-radius: 100%;
  }
 
- .fixed-box{
-    padding: 20px;
-    background-color: lightyellow;
-    border: 2px solid yellow;
-    border-radius: 30px;
-    margin: 10px auto;
-    width: 200px;
-    text-align: center;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
- }
 
- .spaced-box{
-    text-align: justify;
-    color: gray;
- }
- .sticky-box{
-     padding: 20px;
-    background-color: lavender;
-    border: 2px solid purple;
-    margin: 10px auto;
-    width: 80%;
-    text-align: center;
-    position: sticky;
-    top: 0;
-   z-index: 3;
+
+ @media (max-width:768px;) {
+     .videoBox{
+        height: 25vh;
+     }
+
+     .musicBox {
+      flex-direction: column;
+     }
  }
