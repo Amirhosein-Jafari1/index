@@ -84,12 +84,24 @@ body{
 
 
 
- @media (max-width:768px;) {
+ @media (max-width:768px) {
      .videoBox{
-        height: 25vh;
+        height: 40vh;
+        width: 80%;
+     }
+
+     .videoBox button{
+      font-size: 0.7rem;
      }
 
      .musicBox {
+      width: 90%;
       flex-direction: column;
+     }
+
+     
+     .musicItem img{
+      width: 3rem;
+      height: 3rem;
      }
  }
